@@ -59,10 +59,10 @@
 		"textAlignment"	"center"
 		"scaleImage"	"1"	
 	}
-	"PlayerStatusHealthValue"
+	"PlayerStatusHealthValueFreezePanel"
 	{
 		"ControlName"	"CExLabel"
-		"fieldName"		"PlayerStatusHealthValue"
+		"fieldName"		"PlayerStatusHealthValueFreezePanel"
 		"xpos"			"-2"
 		"ypos"			"-11"
 		"zpos"			"5"
@@ -75,10 +75,10 @@
 		"font"			"AmmoReserve"
 		"fgcolor"		"255 255 255 255"
 	}
-    "PlayerStatusHealthValueShadow"
+    "PlayerStatusHealthValueShadowFreezePanel"
 	{
 		"ControlName"	"CExLabel"
-		"fieldName"		"PlayerStatusHealthValueShadow"
+		"fieldName"		"PlayerStatusHealthValueShadowFreezePanel"
 		"xpos"			"-1"
 		"ypos"			"-10"
 		"zpos"			"5"
@@ -100,7 +100,7 @@
 			"ypos" 		"-10"
 			"zpos" 		"-26"
 			"wide" 		"56"
-			"tall" 		"23"
+			"tall" 		"56"
 			"autoResize" "0"
 			"pinCorner" "0"
 			"visible" 	"1"
@@ -117,7 +117,7 @@
 			"ypos" 		"-10"
 			"zpos" 		"-26"
 			"wide" 		"56"
-			"tall" 		"23"
+			"tall" 		"56"
 			"autoResize" "0"
 			"pinCorner" "0"
 			"visible" 	"1"

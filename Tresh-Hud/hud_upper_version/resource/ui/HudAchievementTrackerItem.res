@@ -8,7 +8,7 @@
 	{
 	"controlName" "CExLabel"
 	"fieldName" "CrossHairKonrWings"
-	"visible" "1"
+	"visible" "0"
 	"enabled" "1"
 	"zpos" "2"
 
@@ -23,7 +23,49 @@
 	"fgcolor" "White"
 
 	}
-     
+     	fogCrosshair
+	{
+		"controlname"	"CExLabel"
+		"fieldname"	"fogCrosshair"
+		
+		"visible"	"0"
+		"enabled"	"1"
+
+		"xpos"		"0"
+		"ypos"		"2"
+		"zpos"		"2"
+		
+		"wide"		"f0"
+		"tall"		"480"
+
+		"font"		"fogCrosshairSmooth"
+		//
+		// Choose what kind
+		//
+		// "fogCrosshair"         - Pixelated and outlined
+		// "fogCrosshairPlain"    - Pixelated and not outlined
+		// "fogCrosshairSmooth"   - Antialiased, not outlined
+		
+
+		"labeltext"	"s"
+		//
+		// Choose your crosshair
+		// 
+		// Change the "1" to represent the crosshair you want displayed in the Crosshairs.jpg
+		// Remember, each resolution behaves differently, if your crosshair is skewed, not centered,
+		// you will have to play around with the "xpos", "ypos", "wide" and "tall" values.
+		// THERE ARE NO FIXED NUMBERS FOR THIS
+
+		"textAlignment"	"center"
+		
+		"fgcolor"	"Green"
+		//
+		// Crosshair color
+		// 
+		// If you change this, remember to change the same value in HudAnimations_tf.txt
+		// Otherwise the crosshair will change back to the default white color after
+		// flashing upon giving damage.
+	}
     //crosshair end
      
         "HudAchievementTrackerItem"

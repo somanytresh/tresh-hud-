@@ -20,53 +20,85 @@
                 {
                 "ControlName"   "ImagePanel"
                 "fieldName"             "MainBGTeamsSelect"
-                "xpos"          "c-400"//71
-                "ypos"          "c-25"//46
+                "xpos"          "0"//c-400
+                "ypos"          "0"//46
                 "zpos"          "5"
-                "wide"          "1000"
-                "tall"          "77"
+                "wide"          "200"
+                "tall"          "480"
                 "autoResize"    "0"
                 "pinCorner"     "0"
                 "visible"               "1"
                 "enabled"               "1"
-                "fillcolor"             "0 0 0 175"
+                "fillcolor"             "0 0 0 255"
                 "PaintBackgroundType""0"
  
         }
 
-				        "BorderBottom"       
-                {
-                "ControlName"   "ImagePanel"
-                "fieldName"             "BorderBottom"
-                "xpos"          "c-400"//71
-                "ypos"          "c52"//46
-                "zpos"          "5"
-                "wide"          "1000"
-                "tall"          "3"
-                "autoResize"    "0"
-                "pinCorner"     "0"
-                "visible"               "1"
-                "enabled"               "1"
-                "fillcolor"             "30 30 30 255"
-                "PaintBackgroundType""0"
- 
-        }
-				      "BorderTop"       
+				        "BorderTop"       
                 {
                 "ControlName"   "ImagePanel"
                 "fieldName"             "BorderTop"
-                "xpos"          "c-400"//71
-                "ypos"          "c-27"//46
-                "zpos"          "5"
-                "wide"          "1000"
+                "xpos"          "2"//71
+                "ypos"          "0"//46
+                "zpos"          "25"
+                "wide"          "200"
                 "tall"          "3"
                 "autoResize"    "0"
                 "pinCorner"     "0"
                 "visible"               "1"
                 "enabled"               "1"
-                "fillcolor"             "30 30 30 255"
+                "fillcolor"             "225 225 225 255"
                 "PaintBackgroundType""0"
  
+        }
+
+				      "BorderBottom"       
+                {
+                "ControlName"   "ImagePanel"
+                "fieldName"             "BorderBottom"
+                "xpos"          "0"//71
+                "ypos"          "c238"//46
+                "zpos"          "25"
+                "wide"          "200"
+                "tall"          "3"
+                "autoResize"    "0"
+                "pinCorner"     "0"
+                "visible"               "1"
+                "enabled"               "1"
+                "fillcolor"             "225 225 225 255"
+                "PaintBackgroundType""0"
+        }
+						      "BorderLeft"       
+                {
+                "ControlName"   "ImagePanel"
+                "fieldName"             "BorderLeft"
+                "xpos"          "0"//71
+                "ypos"          "0"//46
+                "zpos"          "25"
+                "wide"          "3"
+                "tall"          "480"
+                "autoResize"    "0"
+                "pinCorner"     "0"
+                "visible"               "1"
+                "enabled"               "1"
+                "fillcolor"             "225 225 225 255"
+                "PaintBackgroundType""0"
+        }
+								      "BorderRight"       
+                {
+                "ControlName"   "ImagePanel"
+                "fieldName"             "BorderRight"
+                "xpos"          "200"//71
+                "ypos"          "0"
+                "zpos"          "25"
+                "wide"          "3"
+                "tall"          "480"
+                "autoResize"    "0"
+                "pinCorner"     "0"
+                "visible"               "1"
+                "enabled"               "1"
+                "fillcolor"             "225 225 225 255"
+                "PaintBackgroundType""0"
         }
 
 	
@@ -106,8 +138,9 @@
 	{
 		"ControlName"	"Label"
 		"fieldName"		"mapname"
-		"xpos"			"c-100"
-		"ypos"			"c-100"
+		"zpos"			"9"
+		"xpos"			"0"//c-300
+		"ypos"			"50"
 		"wide"			"200"
 		"tall"			"30"
 		"autoResize"	"0"
@@ -126,8 +159,8 @@
 	{
 		"ControlName"	"CTFTeamButton"
 		"fieldName"		"teambutton0"
-		"xpos"			"c-190"
-		"ypos"			"225"
+		"xpos"			"27"
+		"ypos"			"110"
 		"zpos"			"9"
 		"wide"			"140"
 		"tall"			"40"
@@ -148,15 +181,35 @@
 		"depressedFgColor_override" "255 255 255 128"
 		"selectedFgColor_override" 	"255 255 255 255"
 	}
+	        "BlueBG"
+        {
+                "ControlName"                "CTFImagePanel"
+                "fieldName"                "BlueBG"
+                "xpos"                        "0"
+                "ypos"                        "120"
+                "zpos"                        "8"
+                "wide"                        "200"
+                "tall"                         "40"
+                "autoResize"                "0"
+                "pinCorner"                "0"
+                "visible" "1"
+                "enabled" "1"
+                "image"                        "../hud/color_panel_blu"
+                "scaleImage"                "1"                
+                "src_corner_height"                "40"                                // pixels inside the image
+                "src_corner_width"                "40"                        
+                "draw_corner_width"                "0"                                // screen size of the corners ( and sides ), proportional
+                "draw_corner_height"                 "0"        
+        }        
 
 	"teambutton1"
 	{
 		"ControlName"	"CTFTeamButton"
 		"fieldName"		"teambutton1"
-		"xpos"			"c43"
-		"ypos"			"225"
+		"xpos"			"-3"
+		"ypos"			"290"
 		"zpos"			"9"
-		"wide"			"140"
+		"wide"			"200"
 		"tall"			"40"
 		"autoResize"	"0"
 		"pinCorner"		"2"
@@ -175,16 +228,36 @@
 		"depressedFgColor_override" "255 255 255 128"
 		"selectedFgColor_override" 	"255 255 255 255"
 	}
+	        "RedBG"
+        {
+                "ControlName"                "CTFImagePanel"
+                "fieldName"                "RedBG"
+                "xpos"                        "0"
+                "ypos"                        "300"
+                "zpos"                        "8"
+                "wide"                        "200"
+                "tall"                         "40"
+                "autoResize"                "0"
+                "pinCorner"                "0"
+                "visible" "1"
+                "enabled" "1"
+                "image"                        "../hud/color_panel_red"
+                "scaleImage"                "1"                
+                "src_corner_height"                "40"                                // pixels inside the image
+                "src_corner_width"                "40"                        
+                "draw_corner_width"                "0"                                // screen size of the corners ( and sides ), proportional
+                "draw_corner_height"                 "0"        
+        }        
 
 	"teambutton2"
 	{
 		"ControlName"	"CTFTeamButton"
 		"fieldName"		"teambutton2"
-		"xpos"			"c-124"
-		"ypos"			"c-14"
+		"xpos"			"-3"
+		"ypos"			"c-70"
 		"zpos"			"9"
-		"wide"			"250"
-		"tall"			"20"
+		"wide"			"200"
+		"tall"			"40"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"1"
@@ -207,10 +280,10 @@
 	{
 		"ControlName"	"CTFTeamButton"
 		"fieldName"		"teambutton3"
-		"xpos"			"c-110"
-		"ypos"			"c10"
+		"xpos"			"-2"
+		"ypos"			"c-4"
 		"zpos"			"9"
-		"wide"			"220"
+		"wide"			"200"
 		"tall"			"40"
 		"autoResize"	"0"
 		"pinCorner"		"2"
@@ -234,14 +307,11 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"CancelButton"
-		"xpos"			"r190"
-		"xpos_hidef"			"r200"
-		"ypos"			"r40"
-		"ypos_lodef"			"r64"
-		"ypos_hidef"			"r54"
+		"xpos"			"0"
+		"ypos"			"r90"
 		"zpos"			"6"
-		"wide"			"150"
-		"tall"			"30"
+		"wide"			"200"
+		"tall"			"40"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"0"
@@ -254,13 +324,18 @@
 		"paintbackground""0"
 		"command"		"cancelmenu"
 		"font"			"Team_Select_Font"
+		"defaultFgColor_override" 	"255 255 255 128"
+		"armedFgColor_override"		"255 255 255 255"
+		"depressedFgColor_override" "255 255 255 128"
+		"selectedFgColor_override" 	"255 255 255 255"
+
 	}
 	
 	"TeamMenuSelect"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TeamMenuSelect"
-		"xpos"			"30"
+		"xpos"			"99999"
 		"ypos"			"c200"
 		"zpos"			"6"
 		"wide"			"450"
@@ -327,11 +402,11 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MenuBG"
-		"xpos"			"0"
-		"ypos"			"0"
+		"xpos"			"99999"
+		"ypos"			"99999"
 		"zpos"			"0"		
-		"wide"			"f0"
-		"tall"			"480"
+		"wide"			"0"
+		"tall"			"0"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
@@ -349,8 +424,8 @@
 		"zpos"			"5"
 		"wide"			"0"
 		"tall"			"0"
-		"tall_lodef"	"74"
-		"tall_hidef"	"65"
+		"tall_lodef"	"0"
+		"tall_hidef"	"0"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
@@ -365,8 +440,8 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"BlueCount"
-		"xpos"			"c-237"
-		"ypos"			"c10"
+		"xpos"			"-12"
+		"ypos"			"134"
 		"zpos"			"9"
 		"wide"			"90"
 		"tall"			"30"
@@ -385,8 +460,8 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"BlueCountPlayers"
-		"xpos"			"c-190"
-		"ypos"			"c10"
+		"xpos"			"31"
+		"ypos"			"134"
 		"zpos"			"9"
 		"wide"			"90"
 		"tall"			"30"
@@ -406,8 +481,8 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"RedCount"
-		"xpos"			"c2"
-		"ypos"			"c10"
+		"xpos"			"-12"
+		"ypos"			"315"
 		"zpos"			"9"
 		"wide"			"90"
 		"tall"			"30"
@@ -426,8 +501,8 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"RedCountPlayers"
-		"xpos"			"c49"//-14
-		"ypos"			"c10"
+		"xpos"			"31"//-14
+		"ypos"			"315"
 		"zpos"			"9"
 		"wide"			"90"
 		"tall"			"30"

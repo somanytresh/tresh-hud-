@@ -10,102 +10,52 @@
 		"pinCorner"		"0"
 		"enabled"		"1"
 				
-		"team1_player_base_offset_x"		"-386"
-		"team1_player_base_y"				"170"
+		"team1_player_base_offset_x"		"0"
+		"team1_player_base_y"				"202"
 		"team1_player_delta_x"				"0"
 		"team1_player_delta_y"				"-16"
-		"team2_player_base_offset_x"		"-386"
-		"team2_player_base_y"				"330"
+		
+		"team2_player_base_offset_x"		"0"
+		"team2_player_base_y"				"262"
 		"team2_player_delta_x"				"0"
-		"team2_player_delta_y"				"-16"
+		"team2_player_delta_y"				"16"
 		
 		"playerpanels_kv"
 		{
 			"visible"		"0"
 			"wide"			"160"
-			"tall"			"18"
+			"tall"			"16"
 			"zpos"			"1"
-		
-
 			
 			"color_ready"	"0 255 0 220"
 			"color_notready"	"0 0 0 220"
 			
-			"tabPosition"	"0"
-						
-			"PanelLeft"
-			{
-			"ControlName" 	"ImagePanel"
-			"fieldName" 	"PanelLeft"
-			"xpos" 			"0"
-			"ypos"			"0"
-			"zpos" 			"-1"
-			"wide" 			"49"
-			"tall" 			"18"
-			"autoResize" 	"0"
-			"pinCorner"		"0"
-			"visible" 		"1"
-			"enabled" 		"1"
-			"fillcolor" 	"15 15 15 255"
-			}
 			
-			"PanelTop"
+			"BG"
 			{
 			"ControlName" 	"ImagePanel"
-			"fieldName" 	"PanelTop"
+			"fieldName" 	"BG"
 			"xpos" 			"0"
 			"ypos"			"0"
-			"zpos" 			"-1"
+			"zpos" 			"2"
 			"wide" 			"160"
-			"tall" 			"3"
+			"tall" 			"14"
 			"autoResize" 	"0"
 			"pinCorner"		"0"
 			"visible" 		"1"
 			"enabled" 		"1"
 			"fillcolor" 	"15 15 15 255"
 			}
-			
-			"PanelBottom"
-			{
-			"ControlName" 	"ImagePanel"
-			"fieldName" 	"PanelBottom"
-			"xpos" 			"0"
-			"ypos"			"15"
-			"zpos" 			"-1"
-			"wide" 			"160"
-			"tall" 			"4"
-			"autoResize" 	"0"
-			"pinCorner"		"0"
-			"visible" 		"1"
-			"enabled" 		"1"
-			"fillcolor" 	"15 15 15 255"
-			}
-			
-			"PanelRight"
-			{
-			"ControlName" 	"ImagePanel"
-			"fieldName" 	"PanelRight"
-			"xpos" 			"157"
-			"ypos"			"0"
-			"zpos" 			"-1"
-			"wide" 			"4"
-			"tall" 			"16"
-			"autoResize" 	"0"
-			"pinCorner"		"0"
-			"visible" 		"1"
-			"enabled" 		"1"
-			"fillcolor" 	"15 15 15 255"
-			}
-		
+										  			
 			"playername"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"playername"
-				"font"			"Spectator_Tournament_Font14"
-				"xpos"			"50"
+				"font"			"Segoe12"
+				"xpos"			"48"
 				"ypos"			"0"
-				"zpos"			"5"
-				"wide"			"90"
+				"zpos"			"25"
+				"wide"			"115"
 				"tall"			"16"
 				"autoResize"	"0"
 				"pinCorner"		"0"
@@ -113,7 +63,15 @@
 				"labelText"		"%playername%"
 				"textAlignment"	"west"
 				"fgcolor"		"235 226 202 255"
-			
+					
+				if_mvm
+				{
+					"xpos"				"0"
+					"ypos"				"25"
+					"wide"				"55"
+					"textAlignment"		"center"
+					"font"				"PlayerPanelPlayerName"
+				}
 			}
 			
 			"classimage"
@@ -121,17 +79,25 @@
 				"ControlName"	"CTFClassImage"
 				"fieldName"		"classimage"
 				"xpos"			"0"
-				"ypos"			"1"
-				"zpos"			"2"
-				"wide"			"22"
-				"tall"			"22"
+				"ypos"			"2"
+				"zpos"			"25"
+				"wide"			"14"
+				"tall"			"14"
 				"visible"		"1"
 				"enabled"		"1"
 				"team1_image"			"../hud/class_scoutred"
 				"scaleImage"	"1"	
 				
+				if_mvm
+				{
+					"xpos"			"5"
+					"ypos"			"4"
+					"wide"			"20"
+					"tall"			"20"
+					"image"			"../vgui/hud_connecting"
+				}
 			}
-			
+
 			"classimagebg"
 			{
 				"ControlName"		"Panel"
@@ -146,16 +112,20 @@
 				"bgcolor_override"		"Black"
 				"PaintBackgroundType"	"0"
 				
+				if_mvm
+				{
+					"visible"		"1"
+				}
 			}
 			
 			"HealthIcon"
 				{
 					"ControlName" "EditablePanel"
 					"fieldName" "HealthIcon"
-					"xpos" "23"
-					"ypos" "1"
-					"zpos" "3"
-					"wide" "24"
+					"xpos" "22"
+					"ypos" "0"
+					"zpos" "25"
+					"wide" "100"
 					"tall" "14"
 					"visible" "1"
 					"enabled" "1"
@@ -177,16 +147,20 @@
 				"tall"			"16"
 				"autoResize"	"0"
 				"pinCorner"		"0"
-				"visible"		"0"
+				"visible"		"1"
 				"enabled"		"1"
-				"image"			"../HUD/tournament_panel_brown"
-
+                "image"                    "../hud/color_panel_brown"
+                "scaleImage"                "1"
 				"src_corner_height"	"22"				// pixels inside the image
 				"src_corner_width"	"22"
 			
-				"draw_corner_width"	"3"				// screen size of the corners ( and sides ), proportional
-				"draw_corner_height" 	"3"
+				"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
+				"draw_corner_height" 	"0"
 				
+				if_mvm
+				{
+					"visible"		"1"
+				}	
 			}
 			
 			"ReadyImage"
@@ -205,14 +179,40 @@
 				"image"			"hud/checkmark"
 				"scaleImage"		"1"
 
+				if_mvm
+				{
+					"visible"		"1"
+				}
 			}
 			
 			"respawntime"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"respawntime"
-				"font"			"Spectator_Tournament_Font14"
+				"font"			"DeathNotice"
 				"xpos"			"5"
+				"ypos"			"4"
+				"zpos"			"25"
+				"wide"			"23"
+				"tall"			"10"
+				"autoResize"	"0"
+				"pinCorner"		"0"
+				"visible"		"1"
+				"labelText"		"%respawntime%"
+				"textAlignment"	"west"
+				"fgcolor"		"160 32 240 255"
+				
+				if_mvm
+				{
+					"ypos"			"17"
+				}
+			}
+			"respawntimeBG"
+			{
+				"ControlName"	"CExLabel"
+				"fieldName"		"respawntimeBG"
+				"font"			"DeathNotice"
+				"xpos"			"6"
 				"ypos"			"5"
 				"zpos"			"5"
 				"wide"			"23"
@@ -222,26 +222,12 @@
 				"visible"		"1"
 				"labelText"		"%respawntime%"
 				"textAlignment"	"west"
-				"fgcolor"		"255 20 175 255"
+				"fgcolor"		"90 90 90 255"
 				
-			}
-			"respawntimeBG"
-			{
-				"ControlName"	"CExLabel"
-				"fieldName"		"respawntimeBG"
-				"font"			"Spectator_Tournament_Font14"
-				"xpos"			"6"
-				"ypos"			"6"
-				"zpos"			"5"
-				"wide"			"23"
-				"tall"			"10"
-				"autoResize"	"0"
-				"pinCorner"		"0"
-				"visible"		"1"
-				"labelText"		"%respawntime%"
-				"textAlignment"	"west"
-				"fgcolor"		"TransparentBlack"
-				
+				if_mvm
+				{
+					"ypos"			"17"
+				}
 			}
 			"healthcover"
 			{
@@ -251,7 +237,7 @@
 				"xpos"			"22"
 				"ypos"			"1"
 				"zpos"			"5"
-				"wide"			"26"
+				"wide"			"23"
 				"tall"			"20"
 				"autoResize"	"0"
 				"pinCorner"		"0"
@@ -260,40 +246,44 @@
 				"textAlignment"	"west"
 				"fgcolor"		"15 15 15 255"
 				
+				if_mvm
+				{
+					"ypos"			"17"
+				}
 			}
 			
 			"chargeamount"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"chargeamount"
-				"font"			"Spectator_Tournament_Font14"
-				"xpos"			"130"
+				"font"			"Segoe12"
+				"xpos"			"146"
 				"ypos"			"2"
-				"zpos"			"6"
-				"wide"			"25"
-				"tall"			"13"
+				"zpos"			"25"
+				"wide"			"50"
+				"tall"			"15"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
 				"labelText"		"%chargeamount%"
-				"textAlignment"	"east"
+				"textAlignment"	"west"
 				"fgcolor"		"0 255 255 255"
 			}
 			"chargeamountBG"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"chargeamountBG"
-				"font"			"Spectator_Tournament_Font14"
-				"xpos"			"131"
+				"font"			"Segoe12"
+				"xpos"			"160"
 				"ypos"			"3"
-				"zpos"			"6"
-				"wide"			"25"
-				"tall"			"13"
+				"zpos"			"25"
+				"wide"			"50"
+				"tall"			"15"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
 				"labelText"		"%chargeamount%"
-				"textAlignment"	"east"
+				"textAlignment"	"west"
 				"fgcolor"		"TransparentBlack"
 			}
 			
@@ -315,8 +305,22 @@
 				//"fgcolor"		"235 226 202 255"
 			}
 			
+			if_mvm
+			{
+				"wide"		"55"
+				"tall"		"35"
+			}
 		}
 		
+		if_mvm
+		{
+			"xpos"					"c-250"
+			"ypos"					"6"
+			"wide"					"500"
+			"tall"					"180"
+	
+			"team1_player_delta_x"			"52"
+		}		
 	}
 
 	"topbar"
@@ -371,7 +375,7 @@
 		"enabled"		"1"
 		"labelText"		"#TF_PVE_Buyback"
 		"textAlignment"	"center"
-		"font"			"Spectator_Tournament_Font22"
+		"font"			"HudFontSmall"
 		"wrap"			"1"
 		"centerwrap"	"1"
 	
@@ -442,21 +446,22 @@
 		"xpos"			"r249"
 		"ypos"			"c0"
 		"zpos"			"1"
-		"wide"			"240"
+		"wide"			"250"
 		"tall"			"900"
 		"visible"		"0"
 		"bgcolor_override"		"255 255 255 0"
 		"PaintBackgroundType"	"0"
 		"paintborder"	"0"
 		
-		"model_xpos"		"10"
+		"model_xpos"		"15"
+		"model_ypos"		"25"
 		"model_center_y"	"1"
 		"model_wide"		"64"
 		"model_tall"		"48"
 		
 		"text_xpos"		"90"
-		"text_ypos"		"25"
-		"text_wide"		"150"
+		
+		"text_wide"		"155"
 		"text_center"	"1"
 		
 		"max_text_height"	"90"
@@ -471,7 +476,7 @@
 			"xpos" "0"
 			"ypos" "0"
 			"zpos" "-1"
-			"wide" "240"
+			"wide" "250"
 			"tall" "900"
 			"autoResize" "0"
 			"pinCorner" "0"
@@ -486,7 +491,7 @@
 			"xpos" "4"
 			"ypos" "4"
 			"zpos" "-1"
-			"wide" "232"
+			"wide" "246"
 			"tall" "14"
 			"autoResize" "0"
 			"pinCorner" "0"
@@ -506,8 +511,8 @@
 		{	
 			"ControlName"	"CExLabel"
 			"fieldName"		"ItemLabel"
-			"font"			"Spectator_Tournament_Font14"
-			"xpos"			"10"
+			"font"			"Cerbetica12"
+			"xpos"			"21"
 			"ypos"			"5"
 			"zpos"			"1"
 			"wide"			"270"
@@ -541,5 +546,5 @@
 			"fgcolor"		"235 226 202 255"
 			"centerwrap"	"1"
 		}
-	}
+	}		
 }

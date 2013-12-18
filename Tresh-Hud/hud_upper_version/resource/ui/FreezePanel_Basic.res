@@ -171,7 +171,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"FreezeLabelKiller"
 			"font"			"ServerTimeLeft_Text"
-			"xpos"			"0"
+			"xpos"			"-35"
 			"ypos"			"40"
 			"zpos"			"1"
 			"wide"			"125"
@@ -182,7 +182,7 @@
 			"enabled"		"1"
 			"fgcolor"		"White"
 			"labelText"		"%killername%"
-			"textAlignment"		"west"
+			"textAlignment"		"center"
 		}
 
 		"AvatarImage"

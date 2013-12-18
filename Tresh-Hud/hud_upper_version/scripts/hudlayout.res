@@ -165,12 +165,6 @@
 
 
 
-
-
-
-
-
-
 	fogCrosshair
 	{
 		"controlname"	"CExLabel"
@@ -195,7 +189,7 @@
 		// "fogCrosshairSmooth"   - Antialiased, not outlined
 		
 
-		"labeltext"	"g"
+		"labeltext"	"s"
 		//
 		// Choose your crosshair
 		// 
@@ -206,7 +200,7 @@
 
 		"textAlignment"	"center"
 		
-		"fgcolor"	"Yellow"
+		"fgcolor"	"Green"
 		//
 		// Crosshair color
 		// 
