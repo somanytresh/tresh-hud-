@@ -23,6 +23,22 @@
 	"fgcolor" "White"
 
 	}
+		"CrossHairKonrv2"
+	{
+		"controlName"	"CExLabel"
+		"fieldName"	 	"CrossHairKonrv2"
+		"visible"		"0"
+		"enabled"		"1"
+		"zpos"			"1"
+		"xpos"			"c-16"
+		"ypos"			"c-14"
+		"wide"			"32"
+		"tall"			"32"
+		"font"			"CrossHairKonr"
+		"labelText"		"A"
+		"textAlignment"	"center"	
+		"fgcolor"		"255 255 255 255"
+	}
 	CrossHairNormal
 	{
 		"controlName"	"CExLabel"
@@ -75,10 +91,10 @@
 		"tall"			"31"
 
 		"font"			"CrossHairKonrDot"
-		"labelText"		"'"
+		"labelText"		"."
 		"textAlignment"	"center"	
 		
-		"fgcolor"		"0 0 0 255"
+		"fgcolor"		"30 255 120 255"
 	}
 
 	CrossHairCircle

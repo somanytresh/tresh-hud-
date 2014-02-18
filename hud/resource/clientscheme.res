@@ -548,7 +548,16 @@ Scheme
 				"antialias"	"1"
 			}
 		}
-
+		"CrossHairKonr"
+		{
+			"1"
+			{
+				"name"		"Crosshairs Regular"
+				"tall"		"30"
+				"weight"	"0"
+				"antialias"	"1"
+			}
+		}
 		"FontBold12"
 		{
 			"1"
@@ -4285,7 +4294,7 @@ Scheme
 			{
 				"range" "0x0000 0xFFFF"
 			}
-		}			
+		}				
 		"7"
 		{
 			"font" "resource/fonts/Neris-Black.otf"
@@ -4293,8 +4302,29 @@ Scheme
 		}	
 		"8"
 		{
-			"font" "resource/fonts/Neris-Light.otf"
+			"font" "resource/fonts/Neris Light.otf"
 			"name" "Neris Light"
-		}				
+		}
+		
+		"9"
+		{
+			"font" "resource/fonts/Garm3nFont.ttf"
+			"name" "Garm3nFont"
+		}
+		"10" 
+		{
+			"font" "resource/fonts/crosshairs.ttf"
+			"name" "Crosshairs"
+		}
+		"11" 
+		{
+			"font" "resource/fonts/FORMASGE.ttf"
+			"name" "FORMASGE"
+		}					
+		"12" 
+		{
+			"font" "resource/fonts/symbol.ttf"
+			"name" "symbol"
+		}
 	}
 }
